@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {useEffect, useState} from 'react'
 import {Write} from "./Write";
 import { count } from 'letter-count';
 
@@ -29,6 +29,17 @@ function App() {
         setText(text);
         setWordCount(count(text).word);
     }
+
+    useEffect(() => {
+        const text = localStorage.getItem('cachedText');
+        if (text && text.length > 0) {
+            setText(text);
+        }
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem('cachedText', text);
+    }, [text]);
 
     return (
         <div className="relative w-screen h-screen">
