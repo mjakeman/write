@@ -47,7 +47,7 @@ export function Credits({hideModal}: Props) {
                     </div>
                 </div>
             </div>
-            <img className="absolute bottom-0 left-0 max-w-xs opacity-50"
+            <img className="animate-fade-in absolute bottom-0 left-0 max-w-xs opacity-50"
                  alt="Move the mouse to the corner of the screen to reveal actions"
                  src="/write/help.svg"/>
         </div>
