@@ -39,11 +39,13 @@ export function Credits({hideModal}: Props) {
                             </ul>
                         </div>
 
-                        <p className="vertical text-center text-sm text-white/50">Made in NZ by <a href="https://mattjakeman.com/" className="underline">Matthew Jakeman</a></p>
+                        <p className="vertical text-center text-sm text-white/50">Made by <a href="https://mattjakeman.com/" className="underline">Matthew Jakeman</a> | <a className="underline" href="https://github.com/mjakeman/write">Source Code</a></p>
                     </div>
                 </div>
             </div>
-            <img className="absolute bottom-0 left-0 max-w-xs opacity-50" src="/help.svg"/>
+            <img className="absolute bottom-0 left-0 max-w-xs opacity-50"
+                 alt="Move the mouse to the corner of the screen to reveal actions"
+                 src="/help.svg"/>
         </div>
     );
 }

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="162mm"
+   height="64mm"
+   viewBox="0 0 162 64"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="help.svg"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.97228295"
+     inkscape:cx="325.52252"
+     inkscape:cy="229.3571"
+     inkscape:window-width="1512"
+     inkscape:window-height="848"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path5057"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1007">
+      <rect
+         style="fill:#ff0000;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect1009"
+         width="26.813339"
+         height="27.688385"
+         x="26.610697"
+         y="0" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none"
+       id="path288"
+       cx="26.610697"
+       cy="27.688389"
+       rx="19.978746"
+       ry="19.564251"
+       clip-path="url(#clipPath1007)"
+       transform="translate(-26.854234,36.56716)" />
+    <text
+       xml:space="preserve"
+       style="font-size:12.7px;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS';fill:#ffffff;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none"
+       x="12.533634"
+       y="10.678416"
+       id="text1065"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:2"
+         x="12.533634"
+         y="10.678416"
+         id="tspan1071"
+         dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36983916">Move your mouse to each</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:2"
+         x="12.533634"
+         y="27.097845"
+         id="tspan1125">corner for options</tspan></text>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.35445;stroke-linejoin:round;stroke-dasharray:none;marker-start:url(#Arrow1)"
+       d="m 22.024261,46.652548 c 0,0 11.946669,-1.273378 14.779386,-12.224428"
+       id="path1181" />
+  </g>
+</svg>

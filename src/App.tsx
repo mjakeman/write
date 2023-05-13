@@ -21,7 +21,9 @@ function App() {
     }
 
     const doClear = () => {
-        setText("");
+        if (confirm("Do you want to clear all text? This cannot be undone")) {
+            setText("");
+        }
     }
 
     const showAbout = (show: boolean) => {
@@ -63,7 +65,7 @@ function App() {
               <Write text={text} setText={doUpdate}/>
             </div>
             <div className="bottom-0 absolute w-full flex flex-row justify-between">
-                <button className="p-8 transition ease-out text-white/0 hover:text-white/50 active:text-white/75" onClick={_ => showAbout(true)}>Credits</button>
+                <button className="p-8 transition ease-out text-white/0 hover:text-white/50 active:text-white/75" onClick={_ => showAbout(true)}>Help</button>
                 <p className="p-8 select-none transition ease-out text-white/0 hover:text-white/50 active:text-white/75">Words: {wordCount}</p>
             </div>
         </div>
