@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import KofiButton from "kofi-button"
 
 type Props = {
     hideModal: () => void;
@@ -26,10 +27,10 @@ export function Credits({hideModal}: Props) {
                             <h1 className="text-2xl">Write</h1>
                         </div>
 
-                        <div className="flex flex-col gap-2 p-4 text-lg my-8">
-                            <p>Write better.</p>
+                        <div className="flex flex-col gap-2 p-4 text-lg mt-6">
+                            <p className="text-xl font-bold">Write better.</p>
                             <p>Focus on typing and not editing.</p>
-                            <br className="mb-4"/>
+                            <br/>
                             <p>Move your mouse to one of the four corners to:</p>
                             <ul className="list-disc ml-8">
                                 <li>Copy (top left)</li>
@@ -37,6 +38,9 @@ export function Credits({hideModal}: Props) {
                                 <li>Count Words (bottom right)</li>
                                 <li>See this dialogue again (bottom left)</li>
                             </ul>
+                            <div className="m-auto mt-4">
+                                <KofiButton color="#29abe0" title="Like it? Support Me on Ko-fi" kofiID="W7W1BECOO"/>
+                            </div>
                         </div>
 
                         <p className="vertical text-center text-sm text-white/50">Made by <a href="https://mattjakeman.com/" className="underline">Matthew Jakeman</a> | <a className="underline" href="https://github.com/mjakeman/write">Source Code</a></p>
