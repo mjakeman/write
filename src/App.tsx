@@ -30,7 +30,7 @@ function App() {
 
     const doUpdate = (text: string) => {
         setText(text);
-        setWordCount(count(text).word);
+        setWordCount(count(text).words);
     }
 
     useEffect(() => {
