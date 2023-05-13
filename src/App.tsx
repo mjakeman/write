@@ -1,11 +1,14 @@
 import {useEffect, useState} from 'react'
 import {Write} from "./Write";
 import { count } from 'letter-count';
+import {Credits} from "./Credits";
+import * as React from "react";
 
 function App() {
 
     const [text, setText] = useState('');
     const [wordCount, setWordCount] = useState(0);
+    const [isOpen, setIsOpen] = useState(false);
 
     const doCopy = async () => {
         try {
@@ -21,8 +24,8 @@ function App() {
         setText("");
     }
 
-    const doCredits = () => {
-        window.location.href = "https://mattjakeman.com/"
+    const showAbout = (show: boolean) => {
+        setIsOpen(show);
     }
 
     const doUpdate = (text: string) => {
@@ -35,6 +38,12 @@ function App() {
         if (text && text.length > 0) {
             setText(text);
         }
+
+        const existingVisitor = localStorage.getItem('existingVisitor');
+        if (!existingVisitor) {
+            showAbout(true);
+            localStorage.setItem('existingVisitor', 'true');
+        }
     }, []);
 
     useEffect(() => {
@@ -43,6 +52,9 @@ function App() {
 
     return (
         <div className="relative w-screen h-screen">
+            {isOpen ? (
+                <Credits hideModal={() => showAbout(false)}/>
+            ): null}
             <div className="absolute w-full flex flex-row justify-between">
                 <button className="p-8 transition ease-out text-white/0 hover:text-white/50 active:text-white/75" onClick={doCopy}>Copy</button>
                 <button className="p-8 transition ease-out text-white/0 hover:text-white/50 active:text-white/75" onClick={doClear}>Clear</button>
@@ -51,7 +63,7 @@ function App() {
               <Write text={text} setText={doUpdate}/>
             </div>
             <div className="bottom-0 absolute w-full flex flex-row justify-between">
-                <button className="p-8 transition ease-out text-white/0 hover:text-white/50 active:text-white/75" onClick={doCredits}>Credits</button>
+                <button className="p-8 transition ease-out text-white/0 hover:text-white/50 active:text-white/75" onClick={_ => showAbout(true)}>Credits</button>
                 <p className="p-8 select-none transition ease-out text-white/0 hover:text-white/50 active:text-white/75">Words: {wordCount}</p>
             </div>
         </div>
